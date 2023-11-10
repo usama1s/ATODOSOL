@@ -1,0 +1,37 @@
+<?php
+
+
+$pixel_id = '933971410841410';
+$access_token = 'EAAfFzqsXzPMBAClN1dGvCvRWoPhzkVV8x5DZAfetVdArbN5tx4pWUQZBenfLy1u9z1Kon1rfYTiESQWYkdZBAcS4xX1E21hzZBpai8lOJhJBhigJ1D8DVZB8FmtjxZBVcUtfmzHtRhjrONqNN6v8NVZCqvZBmzZB386gF2h3qlkZCazoGqbdl296I7';
+$graph_url = "https://graph.facebook.com/v13.0/$pixel_id/events";
+$time = mktime();
+
+$data = array(
+	"access_token" => $access_token,
+	"data" => json_encode(
+		array(
+			array(
+				"event_name" => "Chat Opened",
+				"event_time" => "$time",
+				"user_data" => array(
+					"client_ip_address" => $_SERVER['REMOTE_ADDR'],
+					"client_user_agent" => $_SERVER['HTTP_USER_AGENT'],
+				),
+				"event_source_url" => "https://atodosol.es/",
+				"action_source" => "website"
+			)
+		)
+	)
+);
+
+$ch = curl_init();
+curl_setopt_array($ch, array(
+	CURLOPT_URL => $graph_url,
+	CURLOPT_RETURNTRANSFER => 1,
+	CURLOPT_POST => 1,
+	CURLOPT_POSTFIELDS => $data,
+));
+
+$cdata = curl_exec($ch);
+
+echo "1";
