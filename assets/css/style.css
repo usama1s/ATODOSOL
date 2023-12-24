@@ -2218,14 +2218,13 @@ button.ss_btn:hover {
 .ss_testimonial_right {
   /* width: 24rem; */
   background: white;
-  padding: 18px;
-  margin: 18px;
+  margin: 18px 0;
   height: 100%;
 }
 
 .ss_testimonial_right h1 {
   font-size: 22px;
-  margin: 15px 0px 0px;
+  margin: 0 0px 0px;
   color: black;
 }
 
@@ -2262,7 +2261,12 @@ button.ss_btn:hover {
 
 .ss_testimonial_right,
 .ss_testimonial_left {
-  padding-top: 20px;
+  border-radius: 10px;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 10px);
 }
 
 .ss_about_sec_five {
@@ -4383,7 +4387,10 @@ div#thumbs_img ul {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+#headermain{
+  
+padding-top: 100px !important;
+}
   .ss_banner_main {
     padding: 0px 0px 50px;
   }
@@ -4742,16 +4749,12 @@ div#thumbs_img ul {
   color: #fff;
 }
 
-.team-img {
-  /* height: 400px; */
-}
-
 .ie-common-widget.ie-reviews .rev-explain p {
   color: #5d5d5d;
 }
 
 .callbutt {
-  padding-top: 12px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -5138,7 +5141,7 @@ border-radius: 15px;} **/
 
 @media (max-width: 546px) {
   .w-350-auto {
-    width: 350px;
+    max-width: 350px;
     margin: 20px auto;
   }
 }
@@ -5218,18 +5221,6 @@ border-radius: 15px;} **/
 
 }
 
-@media screen and (max-width: 1600px) and (min-width: 991px) {
-  /* .clock-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .clock-img img{
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  } */
-}
 
 .menu-center {
   height: calc(100vh - 120px) !important;
@@ -5341,4 +5332,13 @@ footer ul li a {
 }
 .modal-form button[type=submit]{
   border-radius: 20px;;
+}
+
+.swiper-slide{
+  height: auto;
+}
+
+.swiper-slide>div>div,
+.swiper-slide>div{
+  height: 100%;
 }
