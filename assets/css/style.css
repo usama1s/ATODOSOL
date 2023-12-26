@@ -5342,3 +5342,7 @@ footer ul li a {
 .swiper-slide>div{
   height: 100%;
 }
+
+.modal-form *{
+  font-family: "Poppins", sans-serif;
+}
