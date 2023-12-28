@@ -2272,6 +2272,7 @@ button.ss_btn:hover {
 
 .ss_about_sec_five {
   position: relative;
+  overflow: hidden;
 }
 
 .ss_testimonial .swiper-button-prev,
@@ -5155,6 +5156,12 @@ border-radius: 15px;} **/
 .faq_area{
   background: #f9f9fe;
 }
+
+.faq_area .card{
+  box-shadow: 0px 0px 20px 0px rgba(131, 149, 255, 0.14);
+  border-radius: 10px;
+  overflow: hidden;
+}
 .card-header{
   background: #ffffff;
 }
@@ -5343,7 +5350,13 @@ footer ul li a {
 .swiper-slide{
   height: auto;
 }
-
+.swiper-slide .ss_testimonial_right{
+  box-shadow: 0px 0px 20px 0px rgba(131, 149, 255, 0.14);
+}
+.swiper-container{
+  padding-bottom: 20px;
+  overflow: visible;
+}
 .swiper-slide>div>div,
 .swiper-slide>div{
   height: 100%;
