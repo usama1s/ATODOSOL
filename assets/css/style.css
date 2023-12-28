@@ -5151,7 +5151,12 @@ border-radius: 15px;} **/
     width: 215px;
   }
 }
-
+.faq_area{
+  background: #f9f9fe;
+}
+.card-header{
+  background: #ffffff;
+}
 .plus-icon {
   width: 18px;
   height: 18px;
