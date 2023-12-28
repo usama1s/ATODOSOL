@@ -493,12 +493,12 @@ window.addEventListener("scroll", function () {
   var headerMain = document.getElementById("headermain");
   var header = document.getElementById("myHeader");
   if (headerMain && header) {
-    var headerMainBottom = headerMain.getBoundingClientRect().bottom - 200;
-
+    var headerMainBottom = headerMain.getBoundingClientRect().bottom -600;
+console.log(headerMainBottom);
     if (headerMainBottom <= 0) {
-      header.classList.add("newClass");
+      header.classList.add("blue-header");
     } else {
-      header.classList.remove("newClass");
+      header.classList.remove("blue-header");
     }
   }
 });
