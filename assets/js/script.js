@@ -494,7 +494,7 @@ window.addEventListener("scroll", function () {
   var header = document.getElementById("myHeader");
   if (headerMain && header) {
     var headerMainBottom = headerMain.getBoundingClientRect().bottom -600;
-console.log(headerMainBottom);
+
     if (headerMainBottom <= 0) {
       header.classList.add("blue-header");
     } else {
